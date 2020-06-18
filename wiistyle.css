@@ -1,0 +1,32 @@
+*{
+  font-family:  'Open Sans';
+  color: white;
+}
+
+body{
+  background-image: url(nintendo.png);
+  animation: caminantes 100s infinite;
+}
+.wii{
+  max-width: 80%;
+  margin-left: 10%;
+  margin-top: 2%;
+}
+
+@keyframes caminantes{
+  0% {background-position: left 0px;}
+  100% {background-position: left 10000px;}
+}
+.volver{
+  position: absolute;
+  top: 0px;
+}
+.volver img{
+  width: 100px;
+  margin-left: 20px;
+  background-color: gray;
+}
+.fondo-negro{
+  background-color: black;
+  width: 140px;
+}

@@ -1,0 +1,100 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: url(68744941-pixel-arte-8-bit-fondo-verde-oscuro-del-bosque.jpg);
+  animation: terror 1500s infinite;
+}
+
+@keyframes terror{
+  0%{
+    background-position: left 0% top 0%;
+  }
+  100%{
+    background-position: left 900600px top 0%;
+  }
+  
+}
+.noche-flex{
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  justify-content: space-evenly; 
+  flex-wrap: wrap;
+}
+.noche-flex img{
+  max-width: 200px;
+  max-height: auto;
+
+}
+
+.container-control {
+  position: absolute;
+  top: 0px;
+  left: 44%;
+  height: 630px;
+  width: 155px;
+   margin: 60px -100px 0px;
+  margin: auto; 
+  border-radius: 20px;
+  background-color:#3130306e;
+  border: 0.4px solid rgb(182, 182, 182);
+  box-shadow: inset 95px 0px 10px -95px rgba(163,159,161,1), inset -95px 0px 10px -95px rgba(163, 159,161,1), inset 0 100px 23px -91px rgba(255,255,255,1), 16px 25px 99px -16px rgba(94,94,94,1);
+}
+
+.btn{
+  background-color: #b5b5c0;
+  border: 1px solid grey;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  margin: 15px 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1px;
+  border: none;
+  cursor:pointer;
+  box-shadow: inset 0 0 0 1.5px rgba(0, 0, 0, 0.1), inset 0-s.5px 0 rgba (0, 0, 0, 0.25);
+}
+
+.fa-power-off{
+  color: #16cf35;
+  padding-bottom: 4px;
+  
+
+  
+}
+
+.des-power{
+   display: inline; 
+  top: -22px;
+  left: 2px;
+  padding: 2px;
+  color: black;
+  font-size: 9px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  position: relative;
+  z-index: 1;
+  background-color: rgb(212, 203, 203);
+  border-radius: 20%;
+}
+.des-power::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+.des-power:hover::after{
+  transform: scaleX(1);
+  transform-origin: left;
+}
